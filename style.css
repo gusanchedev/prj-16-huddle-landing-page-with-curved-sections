@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .metrics {
+    @apply font-bold text-7xl;
+  }
+  .article-card {
+    @apply px-2 py-32;
+  }
+  .article-title {
+    @apply font-bold text-2xl text-center pt-20 py-8;
+  }
+  .article-card p {
+    @apply text-center px-2 text-veryDarkCyan font-medium;
+  }
+  .article-card img {
+    @apply px-8;
+  }
+}
