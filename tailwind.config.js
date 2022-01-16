@@ -27,6 +27,9 @@ module.exports = {
         bgsectiontopmobile1: "url('images/bg-section-top-mobile-1.svg')",
         bgsectiontopmobile2: "url('images/bg-section-top-mobile-2.svg')",
       },
+      backgroundPosition: {
+        mytop: "top -2rem",
+      },
     },
   },
   plugins: [],
