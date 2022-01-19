@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [FrontendMentor.io](https://www.frontendmentor.io/solutions/huddle-landing-page-with-curved-sections-solution-using-tailwindcss-l9bcIo9zo)
 - Live Site URL: [Vercel](https://prj-16-huddle-landing-page-with-curved-sections.vercel.app/)
 
 ## My process
