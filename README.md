@@ -27,12 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](images/Screenshot20220118.png)
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Vercel](https://prj-16-huddle-landing-page-with-curved-sections.vercel.app/)
 
 ## My process
 
@@ -43,29 +43,64 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- [tailwindcss](https://tailwindcss.com/) - CSS library
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+Use of FontAwesome icons:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<div class="flex flex-nowrap space-x-4 py-12 lg:pl-24">
+  <div class="hover:text-sky-400 hover:cursor-pointer">
+    <i class="fab fa-facebook-square fa-2x"></i>
+  </div>
+  <div class="hover:text-sky-400 hover:cursor-pointer">
+    <i class="fab fa-instagram fa-2x"></i>
+  </div>
+  <div class="hover:text-sky-400 hover:cursor-pointer">
+    <i class="fab fa-twitter-square fa-2x"></i>
+  </div>
+</div>
 ```
 
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
+Customizing TailwindCSS theme:
 
 ```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
+module.exports = {
+  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+  theme: {
+    extend: {
+      fontFamily: {
+        openSans: ["Open Sans", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
+      },
+      colors: {
+        pink: "hsl(322, 100%, 66%)",
+        lightPink: "hsl(321, 100%, 78%)",
+        lightRed: "hsl(0, 100%, 63%)",
+        veryDarkCyan: "hsl(192, 100%, 9%)",
+        veryPaleBlue: "hsl(207, 100%, 98%)",
+      },
+      backgroundImage: {
+        bgfootertopdesktop: "url('images/bg-footer-top-desktop.svg')",
+        bgfootertopmobile: "url('images/bg-footer-top-mobile.svg')",
+        bgsectionbottomdesktop1:
+          "url('images/bg-section-bottom-desktop-1.svg')",
+        bgsectionbottomdesktop2:
+          "url('images/bg-section-bottom-desktop-2.svg')",
+        bgsectionbottommobile1: "url('images/bg-section-bottom-mobile-1.svg')",
+        bgsectionbottommobile2: "url('images/bg-section-bottom-mobile-2.svg')",
+        bgsectiontopdesktop1: "url('images/bg-section-top-desktop-1.svg')",
+        bgsectiontopdesktop2: "url('images/bg-section-top-desktop-2.svg')",
+        bgsectiontopmobile1: "url('images/bg-section-top-mobile-1.svg')",
+        bgsectiontopmobile2: "url('images/bg-section-top-mobile-2.svg')",
+      },
+      backgroundPosition: {
+        mytop: "top -2rem",
+      },
+    },
+  },
+  plugins: [],
 };
 ```
 
